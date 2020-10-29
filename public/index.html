@@ -2,9 +2,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.1/socket.io.js"></script>
     <title>WebSockets 101</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Woo, you see me!</h1>
+    <div id="mario-chat">
+        <div id="chat-window">
+            <div id="output"></div>
+        </div>
+        <input type="text" id="handle" placeholder="Handle"/>
+        <input type="text" id="message" placeholder="Message"/>
+        <button id="send">Send</button>
+    </div>
 </body>
+<script src="/chat.js"></script>
 </html>
